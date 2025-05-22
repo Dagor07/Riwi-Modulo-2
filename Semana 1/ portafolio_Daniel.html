@@ -1,20 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida</title>
-    <link rel="stylesheet" href="/Css/Index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Oswald&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Portafolio_Daniel</title>
+  <link rel="stylesheet" href="Css/Index.css">
 </head>
+
 <body>
-    <div class="name"
-        <div> class="content">
-            <p class="p-1"> Daniel Gonzalez Ortiz</p>
-            <p class="p-2">23 años</p>
-        </div>    
+  <style>
+    .me {
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      
+    }
+   
+  </style>
+
+  <h1>Daniel González Ortiz</h1>
+
+  <nav>
+
+    <ul>
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="presentacion">
+    <div class="me">
+      <h2>Sobre mí</h2>
+      <p class="parrafos">Hola, soy Daniel y me encanta explorar el mundo de la tecnología. Siempre estoy buscando oportunidades para aprender nuevas habilidades que me ayuden a crecer profesionalmente.</p>
+      <p class="parrafos">Mi enfoque principal es el desarrollo web y las tecnologías emergentes que transforman nuestra forma de vivir y trabajar.</p>
+      <img src="Imagenes/Captura desde 2025-05-21 19-24-49.png" alt="Foto" max-width="400">
     </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>HTML y CSS</li>
+      <li>Git y GitHub</li>
+      <li>Python básico</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyects</h2>
+    <h3>Products Inventory</h3>
+    <p>Project to manage the inventory of a store</p>
+    <img src="proyecto1.jpg" alt="Imagen del proyecto" width="300">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre del Proyecto</th>
+          <th>Tecnologías Usadas</th>
+          <th>Enlace</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Products Inventory</td>
+          <td>Python</td>
+          <td><a href="https://github.com/Dagor07/Products-Inventory/tree/main" target="_blank">Ver proyecto</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Sígueme en:
+      <a href="Github"_blank">GitHub</a>
+    </p>
+  </footer>
 </body>
 </html>
