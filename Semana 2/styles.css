@@ -1,0 +1,74 @@
+/* Paso 2: Selectores y especificidad */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#principal {
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+.contenedor {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Conflicto de estilos: el ID tiene mayor especificidad que la clase */
+.titulo {
+  color: #0066cc;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.parrafo {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Paso 3: Bordes, fondos, sombras ya incluidos arriba */
+
+/* Paso 4: Modelo de caja */
+.boton {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00aaff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Paso 5: Display y Position */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Paso 6: Pseudoclases y animación */
+.boton:hover {
+  background-color: #0077cc;
+  transform: scale(1.1);
+}
+
+
+/* Animación */
+.titulo {
+  animation: entrada 2s ease-in-out;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
