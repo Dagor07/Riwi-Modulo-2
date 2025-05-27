@@ -1,7 +1,7 @@
-/* Paso 2: Selectores y especificidad */
+/*Selectores y especificidad */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #555;
 }
 
 #principal {
@@ -10,7 +10,7 @@ body {
 }
 
 .contenedor {
-  background-color: white;
+  background-color: rgb(142, 148, 144);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 50px auto;
   max-width: 600px;
@@ -19,30 +19,30 @@ body {
 
 /* Conflicto de estilos: el ID tiene mayor especificidad que la clase */
 .titulo {
-  color: #0066cc;
+  color: #ffffff;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 .parrafo {
-  color: #555;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-/* Paso 3: Bordes, fondos, sombras ya incluidos arriba */
+/* Bordes, fondos, sombras ya incluidos arriba */
 
-/* Paso 4: Modelo de caja */
-.boton {
+/* Modelo de caja */
+a {
   padding: 10px 20px;
   margin: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #00aaff;
+  background-color: #000000;
   color: white;
   cursor: pointer;
 }
 
-/* Paso 5: Display y Position */
+/* Display y Position */
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -50,8 +50,8 @@ body {
   position: relative;
 }
 
-/* Paso 6: Pseudoclases y animación */
-.boton:hover {
+/* Pseudoclases y animación */
+a:hover {
   background-color: #0077cc;
   transform: scale(1.1);
 }
