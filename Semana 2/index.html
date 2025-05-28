@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio M2S2</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante El Sabor</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  
-  <div class="contenedor" id="principal">
-    <h1 class="titulo">Bienvenido a Demon Slayer</h1>
-    <p class="parrafo">Esta es una pagina donde podrás spoilearte de los sucesos de la serie.</p>
-    <a href="http://127.0.0.1:5500/index.html">Haz click aquí</a>
-  </div>
+  <header class="header">
+    <div class="headerlogo">El Sazón</div>
+   
+  </header>
 
+  <main class="main">
+    <section class="u-text-center u-mb-2">
+      <h1>Bienvenido a El Sazón</h1>
+      <p>Comida auténtica con el mejor sabor local.</p>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="menu-card">
+        <img src="imagenes/Arepas-rellenas" alt="Plato 1" class="menu-cardimg">
+        <div class="menu-cardcontent">
+          <h3 class="menu-cardtitle">Arepa con Queso</h3>
+          <p class="menu-carddesc">Arepa casera rellena con queso derretido.</p>
+          <p class="menu-card__price">$10.000</p>
+        </div>
+      </div>
+      <!-- Repite más .menu-card según necesidad -->
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <p> Cl. 16 #55-129, Guayabal, Medellín</p>
+    <p> Lun-Dom: 8am - 10pm</p>
+    <p> Síguenos: @elsazón_restaurante</p>
+  </footer>
+
+   <nav class="headernav">
+      <a href="#">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 </body>
 </html>
