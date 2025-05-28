@@ -1,7 +1,122 @@
-/* .menu-cardimg {
-width: 10%;
-} */
+/* === Variables CSS === */
+:root {
+  --color-primary: #d84315;
+  --color-secondary: #ffccbc;
+  --color-bg: #fff8f5;
+  --color-text: #333;
+  --font-main: 'Segoe UI', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.5rem;
+}
 
-.menu-section img{
-    width: 60px;
+/* === Global === */
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding-top: 80px; /* espacio para header fijo */
+}
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #bf360c;
+}
+
+/* === Utilidades === */
+.u-text-center {
+  text-align: center;
+}
+.u-mb-2 {
+  margin-bottom: 1rem;
+}
+.u-mt-2 {
+  margin-top: 1rem;
+}
+.u-p-2 {
+  padding: 1rem;
+}
+
+/* === Layout === */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+.header__logo {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+.header__nav a {
+  margin-left: 1rem;
+  color: white;
+}
+
+.main {
+  padding: 2rem;
+}
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* === BEM: Componente de plato === */
+.menu-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.menu-card_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.menu-card__content {
+  padding: 1rem;
+}
+.menu-card__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.5rem;
+}
+.menu-card__desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.menu-card__price {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* === Footer === */
+.footer {
+  background: var(--color-secondary);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
