@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio Daniel González Ortiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#presentacion">Presentación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Daniel González Ortiz</h1>
+  </header>
+
+  <main>
+    <section id="presentacion" class="me">
+      <h2>Sobre mí</h2>
+      <div class="presentacion-flex">
+        <div>
+          <p>Hola, soy Daniel. Apasionado por la tecnología, en constante búsqueda de nuevas habilidades para crecer profesionalmente. Me enfoco en desarrollo web y tecnologías emergentes que transforman la vida y el trabajo.</p>
+        </div>
+        <div class="foto">
+          <img src="img/tu_foto.png" alt="Foto de Daniel" width="180">
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <ul class="skills-list">
+        <li>HTML y CSS</li>
+        <li>Git y GitHub</li>
+        <li>Python básico</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="portafolio-lista">
+        <article class="proyecto">
+          <img src="img/proyecto1.png" alt="Products Inventory" width="160">
+          <h3>Products Inventory</h3>
+          <p>Gestor de inventario para tiendas.</p>
+          <a href="https://github.com/Dagor07/Products-Inventory/tree/main" target="_blank" class="btn">Ver proyecto</a>
+        </article>
+        <article class="proyecto">
+          <img src="img/proyecto2.png" alt="Restaurant Menu" width="160">
+          <h3>Restaurant Menu</h3>
+          <p>Menú digital para restaurantes.</p>
+          <a href="https://github.com/Dagor07/Menu-card.git" target="_blank" class="btn">Ver proyecto</a>
+        </article>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del Proyecto</th>
+            <th>Tecnologías</th>
+            <th>Enlace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Products Inventory</td>
+            <td>Python</td>
+            <td><a href="https://github.com/Dagor07/Products-Inventory/tree/main" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Restaurant Menu</td>
+            <td>HTML, CSS</td>
+            <td><a href="https://github.com/Dagor07/Menu-card.git" target="_blank">Ver</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sígueme en <a href="https://github.com/Dagor07?tab=repositories" target="_blank">GitHub</a></p>
+    <small>&copy; 2025 Daniel González Ortiz</small>
+  </footer>
+</body>
+</html>
